@@ -14,11 +14,20 @@
             CarName = string.Empty;
             MPG = 0;
         }
+
         public Cars(string type, string name, double mpg)
         {
             CarType = type;
             CarName = name;
             MPG = mpg;
+        }
+
+        public override string ToString()
+        {
+            //return ("Car is "+ CarType+
+                //" Car Name is " + CarName+
+                //" Car's MPG is " +  MPG.ToString());
+            return (CarType + " " + CarName + " "+ MPG.ToString());
         }
     }
 }
