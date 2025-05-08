@@ -34,8 +34,9 @@
             txtName = new TextBox();
             cboTypes = new ComboBox();
             btnAdd = new Button();
-            cboMPG = new ComboBox();
             lstOut = new ListBox();
+            numUDMPG = new NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)numUDMPG).BeginInit();
             SuspendLayout();
             // 
             // lblType
@@ -90,14 +91,6 @@
             btnAdd.UseVisualStyleBackColor = true;
             btnAdd.Click += btnAdd_Click;
             // 
-            // cboMPG
-            // 
-            cboMPG.FormattingEnabled = true;
-            cboMPG.Location = new Point(145, 107);
-            cboMPG.Name = "cboMPG";
-            cboMPG.Size = new Size(121, 23);
-            cboMPG.TabIndex = 8;
-            // 
             // lstOut
             // 
             lstOut.FormattingEnabled = true;
@@ -107,13 +100,20 @@
             lstOut.Size = new Size(212, 154);
             lstOut.TabIndex = 9;
             // 
+            // numUDMPG
+            // 
+            numUDMPG.Location = new Point(146, 108);
+            numUDMPG.Name = "numUDMPG";
+            numUDMPG.Size = new Size(120, 23);
+            numUDMPG.TabIndex = 10;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(317, 347);
+            Controls.Add(numUDMPG);
             Controls.Add(lstOut);
-            Controls.Add(cboMPG);
             Controls.Add(btnAdd);
             Controls.Add(cboTypes);
             Controls.Add(txtName);
@@ -123,6 +123,7 @@
             Name = "Form1";
             Text = "Sheridan's Cars";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)numUDMPG).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -135,7 +136,7 @@
         private TextBox txtName;
         private ComboBox cboTypes;
         private Button btnAdd;
-        private ComboBox cboMPG;
         private ListBox lstOut;
+        private NumericUpDown numUDMPG;
     }
 }

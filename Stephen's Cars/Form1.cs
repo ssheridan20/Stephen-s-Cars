@@ -31,7 +31,7 @@ namespace Stephen_s_Cars
             //no error checking
             Cars c = new Cars(cboTypes.Text,
                 txtName.Text,
-                (double)cboMPG.Value);
+                (double)numUDMPG.Value);
             lstOut.Items.Add(c);
             lstOut.Items.Add(c.CarType);
         }
